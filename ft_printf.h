@@ -6,7 +6,7 @@
 /*   By: tpongrit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/21 20:23:55 by tpongrit          #+#    #+#             */
-/*   Updated: 2022/07/21 20:31:24 by tpongrit         ###   ########.fr       */
+/*   Updated: 2022/07/24 15:57:09 by tpongrit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@
 # include <unistd.h>
 # include <stdarg.h>
 
-int	ft_putchar_c(char c);
-int	ft_putstr_s(char *c);
+int		ft_putchar_c(char c);
+int		ft_putstr_s(char *c);
+size_t	ft_strlen(const char *str);
 
 #endif

@@ -1,0 +1,7 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/thanakorn/Documents/42project/ft_printf'
+gcc -Wall -Wextra -Werror -c ft_putchar.c -o ft_putchar.o
+gcc -Wall -Wextra -Werror -c ft_putstr.c -o ft_putstr.o
+ar rcs libftprintf.a ft_putchar.o ft_putstr.o
+make: Leaving directory `/Users/thanakorn/Documents/42project/ft_printf'
+ 
