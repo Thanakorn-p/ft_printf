@@ -1,34 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_percent.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tpongrit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/24 15:55:13 by tpongrit          #+#    #+#             */
-/*   Updated: 2022/07/30 10:23:53 by tpongrit         ###   ########.fr       */
+/*   Created: 2022/07/30 10:16:46 by tpongrit          #+#    #+#             */
+/*   Updated: 2022/07/30 10:28:05 by tpongrit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-size_t	ft_strlen(const char *str)
+int	ft_percent(void)
 {
-	size_t	i;
+	int	i;
 
-	i = 0;
-	if (!*str)
-		return (0);
-	while (str[i] != '\0')
-		i++;
+	i = write(1, "%", 1);
 	return (i);
 }
 /*
-#include <stdio.h>
-int	main(int argc, char **argv)
+int	main()
 {
-	size_t	i;
-	i = ft_strlen(argv[1]);
-	printf("%zu\n", i);
+	ft_percent();
 }
 */
