@@ -1,7 +1,7 @@
 CC =	gcc
 CFLAG = -Wall -Wextra -Werror
 NAME =	libftprintf.a
-SRCS = ft_putchar.c ft_putstr.c
+SRCS = ft_putchar.c ft_putstr.c ft_strlen.c ft_putnbr.c ft_percent.c ft_putnbr_u.c ft_putnbr_p.c ft_putnbr_lx16.c ft_putnbr_ux16.c ft_printf.c
 OBJS =	$(SRCS:.c=.o)
 RM =	rm -f
 

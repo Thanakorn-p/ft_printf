@@ -2,6 +2,14 @@ make --dry-run --always-make --keep-going --print-directory
 make: Entering directory `/Users/thanakorn/Documents/42project/ft_printf'
 gcc -Wall -Wextra -Werror -c ft_putchar.c -o ft_putchar.o
 gcc -Wall -Wextra -Werror -c ft_putstr.c -o ft_putstr.o
-ar rcs libftprintf.a ft_putchar.o ft_putstr.o
+gcc -Wall -Wextra -Werror -c ft_strlen.c -o ft_strlen.o
+gcc -Wall -Wextra -Werror -c ft_putnbr.c -o ft_putnbr.o
+gcc -Wall -Wextra -Werror -c ft_percent.c -o ft_percent.o
+gcc -Wall -Wextra -Werror -c ft_putnbr_u.c -o ft_putnbr_u.o
+gcc -Wall -Wextra -Werror -c ft_putnbr_p.c -o ft_putnbr_p.o
+gcc -Wall -Wextra -Werror -c ft_putnbr_lx16.c -o ft_putnbr_lx16.o
+gcc -Wall -Wextra -Werror -c ft_putnbr_ux16.c -o ft_putnbr_ux16.o
+gcc -Wall -Wextra -Werror -c ft_printf.c -o ft_printf.o
+ar rcs libftprintf.a ft_putchar.o ft_putstr.o ft_strlen.o ft_putnbr.o ft_percent.o ft_putnbr_u.o ft_putnbr_p.o ft_putnbr_lx16.o ft_putnbr_ux16.o ft_printf.o
 make: Leaving directory `/Users/thanakorn/Documents/42project/ft_printf'
  

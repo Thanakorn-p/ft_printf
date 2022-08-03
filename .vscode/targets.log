@@ -6,9 +6,8 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
- 
 
-# Make data base, printed on Sun Jul 24 15:54:22 2022
+# Make data base, printed on Tue Aug  2 20:29:48 2022
 
 # Variables
 
@@ -49,7 +48,7 @@ ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.h6kkqUbrTt/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.DC9ZwxiWpi/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -95,7 +94,7 @@ MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
 # makefile (from `Makefile', line 4)
-SRCS = ft_putchar.c ft_putstr.c
+SRCS = ft_putchar.c ft_putstr.c ft_strlen.c ft_putnbr.c ft_percent.c ft_putnbr_u.c ft_putnbr_p.c ft_putnbr_lx16.c ft_putnbr_ux16.c ft_printf.c
 # environment
 SHLVL = 1
 # makefile (from `Makefile', line 1)
@@ -122,9 +121,6 @@ MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
 TMPDIR = /var/folders/qc/8bczr_lx39j4k10_zl_13k5c0000gn/T/
 # automatic
 *F = $(notdir $*)
- 
-make: *** No rule to make target `ft_putchar.o', needed by `libftprintf.a'.  Stop.
-
 # environment
 VSCODE_IPC_HOOK = /Users/thanakorn/Library/Application Support/Code/1.69.2-main.sock
 # environment
@@ -170,7 +166,7 @@ MAKELEVEL := 0
 # environment
 CONDA_PREFIX = /Users/thanakorn/opt/anaconda3
 # environment
-VSCODE_PID = 5552
+VSCODE_PID = 1394
 # environment
 _CE_CONDA = 
 # environment
@@ -184,9 +180,9 @@ LANG = C
 
 # Directories
 
-# . (device 16777234, inode 8312573): 11 files, no impossibilities.
+# . (device 16777230, inode 8312573): 31 files, no impossibilities.
 
-# 11 files, no impossibilities in 1 directories.
+# 31 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -194,11 +190,49 @@ LANG = C
 
 # Files
 
+# Not a target:
+ft_putnbr_p.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-01 17:55:00
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+ft_strlen.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-01 17:55:00
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
 all: libftprintf.a
 #  Command-line target.
 #  Implicit rule search has been done.
 #  File does not exist.
-#  File has not been updated.
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+ft_printf.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-01 17:58:39
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+ 
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+ft_putnbr_lx16.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-01 17:55:00
+#  File has been updated.
+#  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
@@ -210,14 +244,17 @@ all: libftprintf.a
 
 # Not a target:
 ft_putstr.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2022-08-01 17:55:00
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-21 21:57:11
+#  Last modified 2022-07-30 19:29:16
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -226,8 +263,27 @@ Makefile:
 # Not a target:
 ft_putchar.o:
 #  Implicit rule search has been done.
-#  File does not exist.
-#  File has not been updated.
+#  Last modified 2022-08-01 17:55:00
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+ft_percent.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-01 17:55:00
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+ft_putnbr_ux16.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-01 17:55:00
+#  File has been updated.
+#  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
@@ -266,18 +322,37 @@ clean:
 	$(RM) $(OBJS)
 	
 
-libftprintf.a: ft_putchar.o ft_putstr.o
+libftprintf.a: ft_putchar.o ft_putstr.o ft_strlen.o ft_putnbr.o ft_percent.o ft_putnbr_u.o ft_putnbr_p.o ft_putnbr_lx16.o ft_putnbr_ux16.o ft_printf.o
 #  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
+#  Last modified 2022-08-01 17:58:39
+#  File has been updated.
+#  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 #  commands to execute (from `Makefile', line 14):
 	ar rcs $(NAME) $(OBJS)
 	
 
+# Not a target:
+ft_putnbr_u.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-01 17:55:00
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+ft_putnbr.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-01 17:55:00
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
 # files hash-table stats:
-# Load=11/1024=1%, Rehash=0, Collisions=0/30=0%
+# Load=19/1024=2%, Rehash=0, Collisions=0/46=0%
 # VPATH Search Paths
 
 # No `vpath' search paths.
@@ -289,6 +364,6 @@ libftprintf.a: ft_putchar.o ft_putstr.o
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Sun Jul 24 15:54:22 2022
+# Finished Make data base on Tue Aug  2 20:29:48 2022
 
  
