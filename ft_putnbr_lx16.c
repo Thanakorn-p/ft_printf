@@ -6,7 +6,7 @@
 /*   By: tpongrit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/30 14:56:18 by tpongrit          #+#    #+#             */
-/*   Updated: 2022/07/30 15:11:55 by tpongrit         ###   ########.fr       */
+/*   Updated: 2022/07/31 07:45:34 by tpongrit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,14 +19,15 @@ int	ft_putnbr_lx16(unsigned int n)
 	char			i;
 	int				j;
 
+	j = 0;
 	num = n;
 	if (num >= 16)
-		ft_putnbr_lx16(num / 16);
+		j += ft_putnbr_lx16(num / 16);
 	if (num % 16 >= 10)
 		i = (num % 16) + 87;
 	else
 		i = (num % 16) + 48;
-	j = write(1, &i, 1);
+	j += write(1, &i, 1);
 	return (j);
 }
 /*
