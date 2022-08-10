@@ -6,13 +6,11 @@
 /*   By: tpongrit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/21 19:53:45 by tpongrit          #+#    #+#             */
-/*   Updated: 2022/08/03 19:24:05 by tpongrit         ###   ########.fr       */
+/*   Updated: 2022/08/09 09:50:53 by tpongrit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include <stdlib.h>
-#include <limits.h>
 
 static	int	printf_tag(const char *str, va_list args, int i)
 {
@@ -66,13 +64,7 @@ int	ft_printf(const char *str, ...)
 /*
 int	main()
 {
-	int	a = 567;
-	ft_printf("%d\n", a);
+	int	a = 1234567;
+	ft_printf("%x\n", a);
 }
 */
-// #include <stdio.h>
-// int	main()
-// {
-// 	ft_printf("%x %x %x %x %x %x %x", INT_MAX, INT_MIN, LONG_MAX, LONG_MIN, ULONG_MAX, 0, -42);
-// 	printf("\n%x %x %x %x %x %x %x", INT_MAX, INT_MIN, LONG_MAX, LONG_MIN, ULONG_MAX, 0, -42);
-// }
